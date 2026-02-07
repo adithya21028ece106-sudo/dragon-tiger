@@ -1,0 +1,88 @@
+* { box-sizing: border-box; font-family: system-ui, Arial; }
+body { margin: 0; background: #0b1220; color: #fff; }
+
+.app { max-width: 520px; margin: 0 auto; padding: 16px; }
+
+.top { text-align: center; margin-bottom: 14px; }
+.top h1 { margin: 10px 0 6px; font-size: 22px; }
+.muted { opacity: 0.75; margin: 0 0 10px; }
+
+.nav { display: flex; justify-content: center; gap: 10px; margin-top: 6px; }
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.85;
+  padding: 8px 12px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.08);
+}
+
+.card {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 18px;
+  padding: 14px;
+  margin: 12px 0;
+}
+
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.grid .btn.green { grid-column: span 2; }
+
+.btn {
+  border: none;
+  border-radius: 16px;
+  padding: 14px 12px;
+  font-size: 16px;
+  cursor: pointer;
+  background: rgba(255,255,255,0.10);
+  color: #fff;
+}
+
+.btn:hover { opacity: 0.9; }
+.btn.blue { background: rgba(80,140,255,0.25); }
+.btn.orange { background: rgba(255,150,60,0.25); }
+.btn.green { background: rgba(80,255,150,0.18); }
+.btn.danger { background: rgba(255,70,70,0.25); }
+
+.row { display: flex; gap: 10px; margin-top: 12px; }
+.row .btn { flex: 1; }
+
+.history {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.badge {
+  padding: 8px 10px;
+  border-radius: 14px;
+  font-weight: 700;
+  font-size: 14px;
+  border: 1px solid rgba(255,255,255,0.10);
+}
+
+.badge.D { background: rgba(80,140,255,0.20); }
+.badge.T { background: rgba(255,150,60,0.20); }
+.badge.I { background: rgba(80,255,150,0.15); }
+
+.stats {
+  margin-top: 14px;
+  padding: 12px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.05);
+  line-height: 1.6;
+}
+
+.prediction {
+  font-size: 18px;
+  font-weight: 800;
+  padding: 14px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.06);
+  margin-bottom: 12px;
+}
+
+.list { margin: 0; padding-left: 18px; line-height: 1.7; opacity: 0.9; }
+
+.footer { text-align: center; opacity: 0.7; margin: 16px 0; font-size: 13px; }
