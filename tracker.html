@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tracker - Dragon vs Tiger</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="app">
+    <header class="top">
+      <h1>📌 Tracker</h1>
+      <p class="muted">Tap result after each round</p>
+      <nav class="nav">
+        <a href="index.html">🏠 Home</a>
+        <a href="predict.html">🔮 Prediction</a>
+      </nav>
+    </header>
+
+    <div class="card">
+      <div class="grid">
+        <button class="btn blue" onclick="addResult('D')">🐉 Dragon</button>
+        <button class="btn orange" onclick="addResult('T')">🐯 Tiger</button>
+        <button class="btn green" onclick="addResult('I')">🤝 Tie</button>
+      </div>
+
+      <div class="stats" id="statsBox"></div>
+
+      <div class="row">
+        <button class="btn danger" onclick="clearAll()">🗑️ Clear All</button>
+        <button class="btn" onclick="undoLast()">↩️ Undo</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>History</h2>
+      <div id="history" class="history"></div>
+    </div>
+
+    <footer class="footer">
+      <span>Auto saved in your phone</span>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    renderAll();
+  </script>
+</body>
+</html>
