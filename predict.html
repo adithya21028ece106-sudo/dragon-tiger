@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prediction - Dragon vs Tiger</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="app">
+    <header class="top">
+      <h1>🔮 Prediction</h1>
+      <p class="muted">Trend-based guess (Not guaranteed)</p>
+      <nav class="nav">
+        <a href="index.html">🏠 Home</a>
+        <a href="tracker.html">📌 Tracker</a>
+      </nav>
+    </header>
+
+    <div class="card">
+      <h2>Next Round Guess</h2>
+      <div id="predictionBox" class="prediction"></div>
+      <button class="btn" onclick="renderPrediction()">🔁 Refresh Prediction</button>
+    </div>
+
+    <div class="card">
+      <h2>Why this prediction?</h2>
+      <ul class="list" id="reasonBox"></ul>
+    </div>
+
+    <div class="card">
+      <h2>Last 20 Results</h2>
+      <div id="last20" class="history"></div>
+    </div>
+
+    <footer class="footer">
+      <span>⚠️ Gambling is risky. Don't chase losses.</span>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    renderPrediction();
+  </script>
+</body>
+</html>
